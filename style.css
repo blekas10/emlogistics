@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'Celestial-Bold';
+    src: url('../fonts/Celestial-Bold/Celestial Bold.otf') format('opentype'),
+         url('../fonts/Celestial-Bold/Celestial Bold Italic.otf') format('opentype'),
+         url('../fonts/Celestial-Bold/Celestial Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Myriad-pro';
+    src: url('../fonts/fonts/myriad-pro/MyriadPro-CondIt.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.banner-container {
+    background-image: url('/assets/_Fotkes/Titulinis-fura.png'); /* replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.btn.btn-warning{
+    color: white;
+}
+.btn.btn-light{
+    background-color: var(--bs-secondary);
+    border-color: var(--bs-primary);
+    color: white;
+}
+.btn.btn-banner{
+    background-color: var(--bs-secondary);
+    border-color: none;
+    color: white;
+}
+
+section.sertificied .row .col-md-9 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.aboutus-icons img{
+    height: 60px;
+    width: 60px;
+}
+
+.aboutus-img{
+    position: relative;
+}
+.aboutus-img div{
+    position: absolute;
+    bottom: -80px;
+    right: 0;
+}
+.aboutus-img div img{
+    width: 80%;
+}
+
+section.values .col-md-4 img {
+    height: 60px;
+    width: 60px;
+}
+
+
+.services-img {
+    max-width: 100%;
+}
+
+.services-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.services-list p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    position: relative;
+}
+
+.services-list p::before {
+    content: '';
+    position: absolute;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #ff5733;
+    border-radius: 50%;
+}
+
+
+.company-logo {
+    margin: 0 20px;
+    max-width: 100px; /* Adjust based on your needs */
+    opacity: 0.6;
+    filter: grayscale(100%);
+    transition: opacity 0.3s;
+}
+
+.company-logo:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+.section-header {
+    font-size: 24px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.section-header::before,
+.section-header::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: #ccc;
+    top: 50%;
+    width: 25%;
+}
+
+.section-header::before {
+    left: 0;
+    transform: translateX(-10%);
+}
+
+.section-header::after {
+    right: 0;
+    transform: translateX(10%);
+}
+
+.contact-info img {
+    height: 40px;
+    width: 40px;
+}
+
+form.contact-form .contact-form-input{
+    margin: 0.5rem;
+}
+.border-double-orange {
+    border-bottom: 3px solid orange;
+}
+.font-celestial{
+    font-family: 'Celestial-Bold', sans-serif;
+}
+.font-myriadpro{
+    font-family: 'Myriad-pro', sans-serif;
+}

@@ -378,7 +378,10 @@ section.about{
     .mb-30{
         margin-bottom: 30px;
     }
-    
+    .carousel-item img.d-block.w-1{
+        width: 100px;
+        height: 70%;
+    }
   }
 @media screen and (min-width: 992px) {
     .sertificied .text-center.p-0{

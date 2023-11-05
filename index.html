@@ -6,6 +6,7 @@
     <title>EMlogistics</title>
     <link rel="stylesheet" href="/css/main.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -82,6 +83,7 @@
                 
             </div>
         </nav>
+        <span id="elementToHide" class="orange-dot d-none d-lg-inline-block"></span>
          <!-- Banner -->
         <section class="banner container-fluid">
             <div class="banner-container d-flex flex-column justify-content-center align-items-center">
@@ -288,7 +290,7 @@
             <div class="section-header">
                 We have 200+ trusted companies who are Trusting Us
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center d-none d-lg-block">
                 <img src="/assets/" alt="Hyundai Glovis" class="company-logo">
                 <img src="path_to_ford_logo" alt="Ford" class="company-logo">
                 <img src="path_to_BLG_logo" alt="BLG Logistics" class="company-logo">
@@ -297,12 +299,41 @@
                 <img src="path_to_KOOPMAN_logo" alt="Koopman" class="company-logo">
                 <img src="path_to_last_logo" alt="Last Company" class="company-logo">
             </div>
+            <div class="row justify-content-center d-block d-lg-none">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item d-flex active">
+                        <img src="path_to_BLG_logo" class="d-block w-100" alt="BLG Logistics">
+                        <img src="path_to_CEVA_logo" class="d-block w-100" alt="CEVA Logistics">
+                      </div>
+                      <div class="carousel-item d-flex">
+                        <img src="path_to_CAT_logo" class="d-block w-100" alt="CAT">
+                        <img src="path_to_ford_logo" class="d-block w-100" alt="Ford">
+                      </div>
+                      <div class="carousel-item d-flex">
+                        <img src="path_to_KOOPMAN_logo" class="d-block w-100 " alt="Koopman" >
+                        <img src="/assets/" class="d-block w-100 " alt="Hyundai Glovis">
+                      </div>
+                      <div class="carousel-item d-flex">
+                        <img src="path_to_last_logo" class="d-block w-100 " alt="Last Company" >
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
         </div>
         <!-- Contacts -->
-        <div class="container-fluid mt-5 pt-5">
-            <div class="row border-double-orange">
+        <div class="container-fluid contacts">
+            <div class="row border-double-orange flex-column-reverse flex-lg-row mt-5 pb-4 mt-lg-0 pb-lg-0">
                 <!-- Contact Information -->
-                <div class="col-md-5 d-flex flex-column align-center gap-3 px-5 py-4">
+                <div class="col-md-5 d-flex align-items-lg-end flex-column align-center px-5 contact-info-container">
                     <div class="contact-info">
                         <div class="d-flex align-items-center">
                             <div class="">
@@ -350,10 +381,10 @@
         
                 <!-- Contact Form -->
                 <div class="col-md-7 container bg-secondary bg-opacity-10 px-5 py-4">
-                    <div class="row">
-                        <div class="">
-                            <h4 class="ms-2">Contact</h4>
-                            <form class="contact-form">
+                    <div class="row contact-form-row">
+                        <div class="p-0">
+                            <h4 class="m-0">Contact</h4>
+                            <form class="contact-form text-center text-lg-left">
                                 <div class="contact-form-input d-flex">
                                     <div class="col-md-6 form-group">
                                         <input type="text" class="form-control" id="name" placeholder="Name">
@@ -369,7 +400,7 @@
                                 <div class="contact-form-input form-group">
                                     <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-secondary px-5 ms-2">Send</button>
+                                <button type="submit" class="btn btn-secondary px-5">Send</button>
                             </form>
                         </div>
                     </div>
@@ -377,18 +408,23 @@
             </div>
         
             <!-- Map Placeholder -->
-            <div class="row">
-                <div class="col-md-5 d-flex align-items-center px-5 py-4">
-                    <div class="display-5">Directions</div>
+            <div class="row mb-30">
+                <div class="col-md-5 d-flex align-items-center px-5 py-4 justify-content-center">
+                    <div class="display-5 m-70">Directions</div>
                 </div>
         
-                <!-- Contact Form -->
-                <div class="col-md-7 container bg-secondary bg-opacity-10 px-5 py-4">
+               
+                <div class="col-md-7 map bg-secondary bg-opacity-10">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d46643.82514794546!2d23.339164534983617!3d54.554178309411334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1slt!2slt!4v1698677804795!5m2!1slt!2slt" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
+        
         <!-- Footer -->
+        <div class="position-relative">
+            <div class="dot"></div>
+        </div>
+        
         <div class="footer bg-secondary pt-5">
             <div class="container">
                 <div class="row text-white">

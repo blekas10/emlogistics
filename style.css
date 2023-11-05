@@ -87,13 +87,13 @@ section.values .col-md-4 img {
 .services-list p::before {
     content: '';
     position: absolute;
-    left: -16px;
-    top: 50%;
+    left: -20px;
+    top: 45%;
     transform: translateY(-50%);
     width: 8px;
     height: 17px;
     background-color: #ff5733;
-    border-radius: 29%;
+    border-radius: 20%;
 }
 
 
@@ -141,11 +141,9 @@ section.values .col-md-4 img {
     width: 40px;
 }
 
-form.contact-form .contact-form-input{
-    margin: 0.5rem;
-}
 .border-double-orange {
     border-bottom: 3px solid orange;
+    position: relative; /* Needed to position the pseudo-element */
 }
 .font-celestial{
     font-family: 'Celestial-Bold', sans-serif;
@@ -229,6 +227,11 @@ section.about{
 .aboutus-icons{
     margin-top: 48px;
 }
+
+  .hidden {
+    display: none!important;
+    /* Or you can use visibility: hidden; */
+  }
 
 
 @media screen and (max-width: 992px) {
@@ -360,6 +363,22 @@ section.about{
     .section-header::after {
         width: 8%;
     }
+    .contact-info{
+        margin: 4px;
+    }
+    .contact-info img{
+        margin:0 10px 0 0;
+    }
+    .contact-info-container{
+        padding-top: 2rem;
+    }
+    form.contact-form > div{
+        margin:8px 0;
+    }
+    .mb-30{
+        margin-bottom: 30px;
+    }
+    
   }
 @media screen and (min-width: 992px) {
     .sertificied .text-center.p-0{
@@ -392,14 +411,14 @@ section.about{
     }
     .values-orange-dot p::before{
         content: '';
-        position: absolute;
-        left: -25px;
-        top: 15px;
-        transform: translateY(-50%);
-        width: 8px;
-        height: 17px;
-        background-color: #ff5733;
-        border-radius: 29%;
+    position: absolute;
+    left: -23px;
+    top: 10px;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 17px;
+    background-color: #ff5733;
+    border-radius: 14%;
     }
     .services-section{
         margin-top: 54px;
@@ -418,4 +437,82 @@ section.about{
         margin:160px 0 45px;
         position: relative;
     }
+    .contacts{
+        margin: 134px 0 0 0;
+    }
+    form.contact-form > div{
+        margin:8px 0;
+    }
+    form.contact-form div input{
+        padding:3px 5px;
+    }
+    form.contact-form div textarea{
+        padding:3px 5px;
+    }
+    .contact-info {
+        width: 60%;
+    }
+    .contact-form-row{
+        width: 65%;
+    }
+    .contact-info-container{
+        margin: auto;
+    }
+    .contact-info{
+        margin: 4px;
+    }
+    .contact-info img{
+        margin:0 10px 0 0;
+    }
+    .m-70{
+        margin-left: 70px;
+    }
+    .map{
+        padding: 0 0;
+    }
+    .map iframe{
+        width: 65%;
+        max-height: 300px;
+        padding: 50px 20px 20px 37px;
+        margin-bottom: 20px;
+    }
+    .border-double-orange::after {
+        content: '';
+        position: absolute;
+        left: 24%;
+        bottom: -4px;
+        width: 315px;
+        height: 4px;
+        background: #fff;
+        transform: translateX(-50%);
+    }
+    .banner{
+        margin-top: 110px;
+    }
+    .orange-dot {
+        height: 30px;
+        width: 13px;
+        background-color: #F15A24;
+        border-radius: 17%;
+        display: inline-block;
+        margin-right: 8px;
+        vertical-align: middle;
+        position: absolute;
+        left: 70%;
+        top: 12.4%;
+        z-index: 10000000;
+    }
+    .dot {
+        height: 30px;
+        width: 13px;
+        background-color: #F15A24;
+        border-radius: 17%;
+        display: inline-block;
+        margin-right: 8px;
+        vertical-align: middle;
+        position: absolute;
+        left: 70%;
+        top: -14px;
+    }
+
 }

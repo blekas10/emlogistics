@@ -4,20 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>EMlogistics</title>
-    <link rel="stylesheet" href="/css/main.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="./fonts/Celestial/Celestial.otf">
+    <link href="./fonts/myriad-pro/MyriadPro-Light.otf">
+    <link href="./fonts/myriad-pro/MYRIADPRO-REGULAR.OTF">
+    <link href="./fonts/myriad-pro/MYRIADPRO-SEMIBOLD.OTF">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-
-        <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="mobile-nav-info w-100 bg-secondary"></div>
-            <div class="container">
+            <div class="container justify-content-between justify-content-lg-even">
                 <!-- Logo and brand name -->
-                <a class="navbar-brand" href="#">
-                    <img src="/assets/_EM LOG-logai/logo-header.png" alt="EM Logistics Logo" width="250" height="48">
-                </a>
+                    <div class="navbar-brand">
+                        <div class="logo-img">
+                            <a class="" href="#"></a>
+                        </div>
+                    </div>
+                
         
                 <!-- Navbar toggle button for mobile devices -->
                 <div class="d-flex">
@@ -26,7 +29,17 @@
                     </button>
     
                     <div class="navbar-text d-lg-none">
-                        <div class="mx-4">LT</div>
+                        
+                        <div class="dropstart">
+                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="lt-flag"></div>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#"><div class="ru-flag"></div></a></li>
+                              <li><a class="dropdown-item" href="#"><div class="en-flag"></div></a></li>
+                            </ul>
+                        </div>
+                        
                     </div>
                 </div>
                 
@@ -38,13 +51,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item me-lg-5">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item me-lg-5">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contacts">Contact</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav d-flex d-lg-none flex-row justify-content-around py-4">
@@ -53,28 +66,37 @@
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="#about">About</a>
                             </li>
                         </div>
                         <div class="">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Services</a>
+                                <a class="nav-link" href="#services">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="#contact">Contact</a>
                             </li>
                         </div>
                         
                         
                     </ul>
                     <div class="d-flex align-items-center">
-                        <div class="navbar-text d-none d-lg-block">
+                        <div class="navbar-text font d-none d-lg-block">
                             <div class="mb-2">emlogistics@emlogistics.lt</div>
                             <div class="">+370 616 34090</div>
                             
                         </div>
-                        <div class="navbar-text d-none d-lg-block mx-4">
-                            <div class="mx-4">LT</div>
+                        <div class="navbar-text d-none d-lg-block ms-5">
+                            
+                            <div class="dropdown">
+                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="lt-flag"></div>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#"><div class="ru-flag"></div></a></li>
+                                  <li><a class="dropdown-item" href="#"><div class="en-flag"></div></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <!-- Contact information -->
@@ -83,14 +105,15 @@
                 
             </div>
         </nav>
-        <span id="elementToHide" class="orange-dot d-none d-lg-inline-block"></span>
+       
          <!-- Banner -->
-        <section class="banner container-fluid">
+        <section class="banner position-relative container-fluid">
+            <span id="elementToHide" class="orange-dot d-none d-lg-inline-block"></span>
             <div class="banner-container d-flex flex-column justify-content-center align-items-center">
                 <h1 class="text-white">Passion for excellence</h3>
                 <button class="btn btn-banner p-0">Discover more</button>
             </div>
-            <div class="container-fluid bg-secondary d-block d-lg-flex align-items-center">
+            <!-- <div class="container-fluid bg-secondary d-block d-lg-flex align-items-center">
                 <div class="d-flex justify-content-center container">
                     <a class="navbar-brand m-auto d-none d-lg-block" href="#">
                         <img src="/assets/_EM LOG-logai/logo-cookieslentele.png" alt="EM Logistics Logo" width="250" height="90">
@@ -104,8 +127,7 @@
                     
                 </div>
                 <p class="text-white font-myriadpro d-block d-lg-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto voluptatem autem sequi unde, debitis similique! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum id voluptas earum voluptatibus eum aliquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto voluptatem autem sequi unde, debitis similique! </p>
-                
-            </div>
+            </div> -->
         </section>
          <!-- Sertificied -->
         <section class="sertificied container">
@@ -115,15 +137,15 @@
                 </div>
                 <div class="d-lg-flex">
                     <div class="text-center p-0">
-                        <img src="/assets/_Ikonos/emblema-sertifikato-medalis.svg" alt="Strongest in Lithuania" class="img-sertified">
+                        <div class="sertificied-img"></div>
                     </div>
-                    <div class="p-0">
+                    <div class="p-0 d-lg-flex flex-column justify-content-between">
                         <p class="d-none d-lg-block"><b>We are Lithuanian company that offers logistics services</b> for vehicles to vehicle manufacturers and their representatives, automobile-rental companies, buyers and sellers. Our company and employees in this business has more than 10 years of experience.</p>
-                        <p class="d-lg-none d-block">Em Logistics was founded on January 11, 2011 in
+                        <p class="d-lg-none d-block"><b>Em Logistics was founded on January 11, 2011</b> in
                             Lithuania. The company provides transportation and
                             forwarding services throughout Europe.</p>
-                        <div class="text-center text-lg-start">
-                            <a href="path_to_your_certificate.pdf" class="btn btn-primary text-white px-lg-4" target="_blank">Full Sertificate</a>
+                        <div class="text-center text-lg-start mb-1">
+                            <a href="path_to_your_certificate.pdf" class="btn btn-primary text-white px-lg-2" target="_blank">Full Sertificate</a>
                         </div>
                         
                     </div>
@@ -132,7 +154,7 @@
             </div>
         </section>
         <!-- About -->
-        <section class="container about">
+        <section id="about" class="container about">
             <div class="col-12 text-left">
                 <h2 class="m-0">About Us</h2>
             </div>
@@ -147,7 +169,7 @@
                 </div>
                 
                 <div class="col-md-6 about-text ">
-                    <p class="m-0">Em Logistics was founded on January 11, 2011 in Lithuania. The company provides transportation and forwarding services throughout Europe. The main type of activity is the transportation of new and used vehicles by road transporters on international routes. Our main goal is quality. Thanks to our many years of experience, we can offer fast, safe, high-quality and reliable transportation of vehicles. We are dedicated to our work, a team of specialists who are always open, accessible and reliable to long-term partners and new customers.</p>
+                    <p class="m-0 about-p"><b>Em Logistics was founded on January 11,</b> 2011 in Lithuania. The company provides transportation and forwarding services throughout Europe. The main type of activity is the transportation of new and used vehicles by road transporters on international routes. Our main goal is quality. Thanks to our many years of experience, we can offer fast, safe, high-quality and reliable transportation of vehicles. We are dedicated to our work, a team of specialists who are always open, accessible and reliable to long-term partners and new customers.</p>
                     <div class="aboutus-icons d-flex justify-content-around">
                         <div class="d-flex flex-column  align-items-center">
                             <img src="/assets/_Ikonos/aboutus-1.svg" alt="Trust Icon" >
@@ -168,12 +190,10 @@
         <!-- Values -->
         <section class="values container">
             <h2 class="text-left m-0">Our Values</h2>
-            <div class="row mt-lg-5 d-none d-lg-flex">
+            <div class="row mt-lg-5 d-none d-lg-flex justify-content-center">
                 <!-- Full Responsibility -->
                 <div class="col-md-4">
-                    <div class="text-center">
-                        <img src="/assets/_Ikonos/value01.svg" alt="Full Responsibility Icon" class="">
-                    </div>
+                    <div class="values-img-1 w-100"></div>
                     <div class="text-left values-orange-dot">
                         <p><b>Full Responsibility</b> We take full responsibility for our activities, i.e. we always try to keep the promises we have given to our customers and partners.</p>
                     </div>
@@ -181,9 +201,7 @@
         
                 <!-- Respect of individuals -->
                 <div class="col-md-4">
-                    <div class="text-center ">
-                        <img src="/assets/_Ikonos/value02.svg" alt="Full Responsibility Icon" class="">
-                    </div>
+                    <div class="values-img-2 w-100"></div> 
                     <div class="text-left values-orange-dot">
                         <p><b>Respect of individuals</b> Everybody is equal as a person. We have different work tasks, but the final result is formed by individual efforts of us all. Everybody should have the possibility to make a good job.</p>
                     </div>
@@ -191,9 +209,7 @@
         
                 <!-- Openness -->
                 <div class="col-md-4">
-                    <div class="text-center ">
-                        <img src="/assets/_Ikonos/value03.svg" alt="Full Responsibility Icon" class="">
-                    </div>
+                    <div class="values-img-3 w-100"></div>
                     <div class="text-left values-orange-dot">
 
                         <p><b>Openness</b> It should always be possible to express one’s opinion both inside as well as outside of the company. In solving any problems, direct communication with the involved people is the key point.</p>
@@ -255,7 +271,7 @@
             </div>
         </section>
         <!-- Services -->
-        <section class="container-fluid services-section">
+        <section id="services" class="container-fluid services-section">
             <div class="row">
                 <h2 class="text-left text-lg-center">Services</h2>
                 <div class="col-md-6 p-0">
@@ -288,34 +304,38 @@
         <!-- TrustedBy -->
         <div class="container-fluid trusted-companies-section text-center">
             <div class="section-header">
-                We have 200+ trusted companies who are Trusting Us
+                <p>
+                    We have 200+ trusted companies who are Trusting Us
+                </p>
             </div>
-            <div class="row justify-content-center d-none d-lg-block">
-                <img src="/assets/_Partneriai grey-60-permatomumo/p1.png" alt="Hyundai Glovis" class="company-logo">
-                <img src="/assets/_Partneriai grey-60-permatomumo/p2.png" alt="Ford" class="company-logo">
-                <img src="/assets/_Partneriai grey-60-permatomumo/p3.png" alt="BLG Logistics" class="company-logo">
-                <img src="/assets/_Partneriai grey-60-permatomumo/p4.png" alt="CEVA Logistics" class="company-logo">
-                <img src="/assets/_Partneriai grey-60-permatomumo/p5.png" alt="CAT" class="company-logo">
-                <img src="/assets/_Partneriai grey-60-permatomumo/p6.png" alt="Koopman" class="company-logo">
-                <img src="/assets/_Partneriai grey-60-permatomumo/p7.png" alt="Last Company" class="company-logo">
+            <div class="row justify-content-center d-none d-lg-flex">
+                
+                <div class="company-logo comp-logo-1"></div>
+                <div class="company-logo comp-logo-2"></div>
+                <div class="company-logo comp-logo-3"></div>
+                <div class="company-logo comp-logo-4"></div>
+                <div class="company-logo comp-logo-5"></div>
+                <div class="company-logo comp-logo-6"></div>
+                <div class="company-logo comp-logo-7"></div>
+                
             </div>
             <div class="row justify-content-center d-block d-lg-none">
                 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-inner d-flex">
                       <div class="carousel-item d-flex justify-content-evenly active">
-                        <img src="/assets/_Partneriai grey-60-permatomumo/p1.png" class="d-block w-1" alt="BLG Logistics">
-                        <img src="/assets/_Partneriai grey-60-permatomumo/p2.png" class="d-block w-1" alt="CEVA Logistics">
+                        <div class="company-logo comp-logo-1"></div>
+                        <div class="company-logo comp-logo-2"></div>
                       </div>
                       <div class="carousel-item d-flex justify-content-evenly">
-                        <img src="/assets/_Partneriai grey-60-permatomumo/p3.png" class="d-block w-1" alt="CAT">
-                        <img src="/assets/_Partneriai grey-60-permatomumo/p4.png" class="d-block w-1" alt="Ford">
+                        <div class="company-logo comp-logo-3"></div>
+                        <div class="company-logo comp-logo-4"></div>
                       </div>
                       <div class="carousel-item d-flex justify-content-evenly">
-                        <img src="/assets/_Partneriai grey-60-permatomumo/p5.png" class="d-block w-1" alt="Koopman" >
-                        <img src="/assets/_Partneriai grey-60-permatomumo/p6.png" class="d-block w-1" alt="Hyundai Glovis">
+                        <div class="company-logo comp-logo-5"></div>
+                        <div class="company-logo comp-logo-6"></div>
                       </div>
                       <div class="carousel-item d-flex justify-content-evenly">
-                        <img src="/assets/_Partneriai grey-60-permatomumo/p7.png" class="d-block w-1" alt="Last Company" >
+                        <div class="company-logo comp-logo-7"></div>
                       </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -330,7 +350,7 @@
             </div>
         </div>
         <!-- Contacts -->
-        <div class="container-fluid contacts">
+        <div id="contacts" class="container-fluid contacts">
             <div class="row border-double-orange flex-column-reverse flex-lg-row mt-5 pb-4 mt-lg-0 pb-lg-0">
                 <!-- Contact Information -->
                 <div class="col-md-5 d-flex align-items-lg-end flex-column align-center px-5 contact-info-container">
@@ -339,7 +359,7 @@
                             <div class="">
                                 <img src="/assets/_Ikonos/workingtime.svg" alt="" class="">
                             </div>
-                            <div class="">
+                            <div class="myriad-bold-contact">
                                 <div>I-IV 08.00-12.00 | 13.00-17.00</div>
                                 <div>V 08.00-12.00 | 13.00-15.45</div>
                             </div>
@@ -380,16 +400,16 @@
                 </div>
         
                 <!-- Contact Form -->
-                <div class="col-md-7 container bg-secondary bg-opacity-10 px-5 py-4">
+                <div class="contact col-md-7 container bg-secondary opacity-005 px-5 py-4">
                     <div class="row contact-form-row">
                         <div class="p-0">
                             <h4 class="m-0">Contact</h4>
                             <form class="contact-form text-center text-lg-left">
-                                <div class="contact-form-input d-flex">
+                                <div class="contact-form-input d-flex overflow-hidden">
                                     <div class="col-md-6 form-group">
                                         <input type="text" class="form-control" id="name" placeholder="Name">
                                     </div>
-                                    <div class="col-md-6 form-group">
+                                    <div class="col-md-6 form-group ml-8">
                                         <input type="email" class="form-control" id="email" placeholder="Email">
                                     </div>
                                 </div>
@@ -398,9 +418,12 @@
                                     <input type="text" class="form-control" id="question" placeholder="Question | Topic">
                                 </div>
                                 <div class="contact-form-input form-group">
-                                    <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+                                    <textarea class="form-control myriad-bold-contact" id="message" rows="3" placeholder="Your message"></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-secondary px-5">Send</button>
+                                <div class="d-flex justify-content-center justify-content-lg-start">
+                                    <button type="submit" class="btn btn-secondary">Send</button>
+                                </div>
+                                
                             </form>
                         </div>
                     </div>
@@ -410,11 +433,11 @@
             <!-- Map Placeholder -->
             <div class="row mb-30">
                 <div class="col-md-5 d-flex align-items-center px-5 py-4 justify-content-center">
-                    <div class="display-5 m-70">Directions</div>
+                    <div class="display-5 m-70 directions">Directions</div>
                 </div>
         
                
-                <div class="col-md-7 map bg-secondary bg-opacity-10">
+                <div class="col-md-7 map bg-secondary opacity-005">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d46643.82514794546!2d23.339164534983617!3d54.554178309411334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1slt!2slt!4v1698677804795!5m2!1slt!2slt" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
@@ -429,17 +452,19 @@
             <div class="container">
                 <div class="row text-white">
                     <!-- Left column: About company -->
-                    <div class="col-md-4">
-                        <a class="navbar-brand m-auto" href="#">
-                            <img src="/assets/_EM LOG-logai/logo-white-footer.png" alt="EM Logistics Logo" width="200" height="70">
+                    <div class="col-md-6">
+                        <a class="" href="#">
+                            <div class="footer-logo-container">
+                                <div class="footer-logo"></div>
+                            </div>
                         </a>
                         <h6>About company</h6>
                         <p>Several sentences about the company and so on and so on.</p>
                         <div class="d-flex">
                             
                         </div>
-                        <a href="#" class="mr-3"><img src="/assets/_Ikonos/fb.svg" alt="EM Logistics Logo" width="30" height="30"></a>
-                        <a href="#" class="mr-3"><img src="/assets/_Ikonos/twt.svg" alt="EM Logistics Logo" width="30" height="30"></a>
+                        <a href="#" class="me-4"><img src="/assets/_Ikonos/fb.svg" alt="EM Logistics Logo" width="30" height="30"></a>
+                        <a href="#" class="me-4"><img src="/assets/_Ikonos/twt.svg" alt="EM Logistics Logo" width="30" height="30"></a>
                         <a href="#" class="mr-3"><img src="/assets/_Ikonos/linkedin.svg" alt="EM Logistics Logo" width="30" height="30"></a>
                         <div class="mt-3">
                             <p>Privacy Policy</p>
@@ -447,29 +472,41 @@
                     </div>
     
                     <!-- Middle column: Links -->
-                    <div class="col-md-4 text-center">
-                        <h5>Links</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><p>Copyright &copy; 2023</p></li>
-                        </ul>
+                    <div class="col-md-3 text-left d-lg-flex flex-column justify-content-between">
+                        <div class="">
+                            <h5>Links</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="p terms">
+                            <p>Copyright &copy; 2023</p>
+                        </div>
+                        
+                       
                     </div>
     
                     <!-- Right column: We Offer -->
-                    <div class="col-md-4 text-center">
-                        <h5>We Offer</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Buying & Selling cars</a></li>
-                            <li><a href="#">Transport services</a></li>
-                            <li><a href="#">Vehicle rental & sale</a></li>
-                            <li><p>Terms and Conditions</p></li>
-                        </ul>
+                    <div class="col-md-3 text-left d-lg-flex flex-column justify-content-between">
+                        <div class="">
+                            <h5>We Offer</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Buying & Selling cars</a></li>
+                                <li><a href="#">Transport services</a></li>
+                                <li><a href="#">Vehicle rental & sale</a></li>
+                            </ul>
+                        </div>
+                        <div class="p">
+                            <p>Terms and Conditions</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </body>
 </html>

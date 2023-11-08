@@ -16,7 +16,15 @@
     background-image: url('/assets/_Fotkes/Titulinis-fura.png'); /* replace with your image path */
     background-size: cover;
     background-position: inherit;
-    height: 403px;
+    height: 670px;
+}
+.logo-img{
+    height: 48px;
+    width: fit-content;
+    
+}
+.logo-img img{
+    width: 100%;
 }
 
 .logo {
@@ -167,9 +175,6 @@ ul.navbar-nav{
     height:217px;
 }
 
-.banner-container h1{
-    margin-top: 110px;
-}
 p.text-white.font-myriadpro{
     margin: 0 55px 0 35px;
     font-size: 15px;

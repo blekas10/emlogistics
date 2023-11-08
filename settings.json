@@ -1,0 +1,15 @@
+{
+    "workbench.colorTheme": "Default Dark Modern",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.minimap.enabled": false,
+    "window.zoomLevel": -1,
+    "files.autoSave": "afterDelay",
+    "editor.formatOnSave": true,
+    "liveSassCompile.settings.formats": [
+      {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "/css",
+      }
+    ]
+  }
